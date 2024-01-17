@@ -27,7 +27,7 @@ variable "region" {
 variable "connection_id" {
   type        = string
   description = "Default ID for the BigQuery connection that is created"
-  default     = "gcf-connection"
+  default     = "remote-connection"
 }
 
 variable "enable_apis" {
