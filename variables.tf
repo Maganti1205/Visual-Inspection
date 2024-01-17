@@ -30,32 +30,9 @@ variable "connection_id" {
   default     = "gcf-connection"
 }
 
-variable "image_function_name" {
-  type        = string
-  description = "Name of the BigQuery remote function for image analysis"
-  default     = "gemini_bq_demo_image"
-}
-
-variable "text_function_name" {
-  type        = string
-  description = "Name of the BigQuery remote function for text analysis"
-  default     = "gemini_bq_demo_text"
-}
-
 variable "enable_apis" {
   type        = string
   description = "Whether or not to enable underlying apis in this solution."
   default     = true
 }
 
-variable "force_destroy" {
-  type        = string
-  description = "Whether or not to protect BigQuery resources from deletion when solution is modified or changed."
-  default     = false
-}
-
-variable "deletion_protection" {
-  type        = string
-  description = "Whether or not to protect GCS resources from deletion when solution is modified or changed."
-  default     = true
-}
